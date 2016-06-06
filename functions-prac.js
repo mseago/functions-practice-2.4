@@ -38,16 +38,16 @@ console.log(maxOfThree(1,2,4));
 function isVowel(char){
     "use strict";
     var vowels = ['a', 'e', 'i', 'o', 'u'];
-    for(var i = 0; i < vowels.length; i++) {
-      if (char === vowels[i]) {
+    if (vowels.indexOf(char) > -1) {
         return true;
       }
       else {
         return false;
       }
-    }
+
+
 }
-console.log(isVowel('x'));
+console.log(isVowel('u'));
 
 // ---------------------
 // Write a function rovarspraket() that will translate a text into "rövarspråket".
@@ -83,25 +83,25 @@ console.log(rovarspraket('hated this one'));
 
 function sum(arr){
     "use strict";
-    var arr=[2,3,4];
+    var arr=[];
     var sum = 0;
     for (var i = 0; i < arr.length; i++) {
       sum += arr[i];
     }
   return sum;
 }
-console.log(sum());
+console.log(sum(2,3,4));
 
 function multiply(arr){
     "use strict";
-    var arr = [1,2,3,4];
+    var arr = [];
     var mult = 1;
     for (var i = 0; i < arr.length; i++) {
       mult = mult * arr[i];
     }
   return mult;
 }
-console.log(multiply());
+console.log(multiply(1,2,3,4));
 
 // ---------------------
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
